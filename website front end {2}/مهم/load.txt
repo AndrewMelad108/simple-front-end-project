@@ -1,0 +1,6 @@
+//loading screen
+$(window).load(function()
+{
+    $("body").css("overflow","auto");
+    $(".loading-screen").fadeOut(100);
+});

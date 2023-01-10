@@ -1,0 +1,41 @@
+ /**********************main navbar**********************************/
+ .navbar-brand span,.About H1 span,
+.About h3 span, .test h1 span,
+.test span, footer h3,
+ footer .copyright span,
+ .statistics h1:hover,
+ .statistics p:hover
+
+{
+    color: #e62929;
+}
+                     /* Active link*/
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover,
+ .navbar-inverse .navbar-nav > .active > a:focus,
+ .dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.carousel-indicators .active,
+.option-box .gear-check
+ {
+     background-color: #e62929;
+ }
+  /*************************************.dropdown-menuلون قائمه************************/
+.dropdown-menu
+  { 
+      border-top: solid 3px #e62929 ;
+  }
+/********************************start option tool section**********************************/
+.option-box .color-option
+{
+    border: #e62929 solid 3px;
+}  
+
+
+
+
+
+/************************************************************************************/     
+
+
+             

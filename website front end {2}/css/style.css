@@ -1,0 +1,463 @@
+  body
+{
+    height: 5000px;
+    font-size:17px;
+    
+}
+
+/********************* start overriding bootstrap*********************/
+
+ /**********************main navbar**********************************/
+.navbar{min-height: 40px}
+ /****************************************اللوجو*******************/  
+.navbar-brand{font-size: 30px;line-height: 40px} 
+.navbar-brand span{color: #e62929; padding-right: 10px}
+/**.navbar-brand:hover{font-size: 40px;}**/
+                     /* Active link*/
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover,
+ .navbar-inverse .navbar-nav > .active > a:focus {background-color: #e62929; }
+ /************************** لون الكلام قبل hover  ************************************/
+ .navbar-inverse .navbar-nav > li > a
+ {
+    color: #BBB;
+    padding-top:25px;
+    padding-bottom: 25px
+ }
+ /*************************************.dropdown-menuلون قائمه************************/
+   .dropdown-menu
+   { 
+       background-color:#101010;
+       color: white;
+       border-top: solid 3px #e62929 ;
+       padding: 6px 20px;
+       min-width: 200px
+   }
+   .navbar-right .dropdown-menu{left: 0;right: auto}       /*ده عشان اخلي القائمه انجلش مش عربي*/
+    /***************************dropdown-menuده لون الكلام في*************************/
+   .dropdown-menu > li > a{ color: #fff;transition: padding 0.5s ease}                                  /* #01*/ 
+    /****************************   dropdown-menu   في  hover ده لون***************/
+   .dropdown-menu>li>a:hover,
+   .dropdown-menu>li>a:focus{background-color:#e62929 ;color: white;padding-left: 30px }                                           /*#01*/
+    /*************************dropdown-menuالخط الفاصل في ***********************/
+   .dropdown-menu .divider{background-color: #9a2626;}
+    /**************************ده الزرار اللي بيظهر في الفون******************/
+   .navbar-toggle{ margin-top:14px}
+   /********************* End Overriding Bootstrap**********************************************/
+
+   /********************************start option tool section**********************************/
+   .option-box
+   {
+       position: fixed;
+       top:100px;
+       left: 0;
+       z-index: 9999
+    }
+   .option-box .color-option
+   {
+       background: #333;
+       color: #fff;
+       padding: 10px;
+       float: left;
+       width: 200px;
+       border: #e62929 solid 3px;
+       display: none
+   }
+   .option-box .color-option ul li
+   {
+       height: 20px;
+       width: 20px;
+       cursor: pointer;
+       display: inline-block;
+       margin-right: 3px;
+       border-radius: 50%;
+       padding: 10px
+   }
+   .option-box .color-option ul li:hover{  transform: scale(1.5,1.5); border: #111 solid 1px}
+   .option-box .gear-check
+   {
+       font-size: 40PX; 
+       color: #fff;
+       cursor: pointer     
+   }
+    /********************* End option tool section********************************************/
+
+   /********************************start sildeshow******************************************/
+
+    /*********************************شكل النص في SHOW*************************************/
+   .carousel-caption{padding-bottom: 60px}
+    /******************************carouselشكل الزرارير في *****************************/
+   .carousel-indicators li{height: 15px;width: 15px}
+    /**********************************اول كوره او الاكتف لون ايه *********************/
+   .carousel-indicators .active
+   {
+       width: 17px;
+       height: 17px;
+       background-color: #e62929
+   }
+   .carousel-inner > .item > img{width: 100%;}
+     /********************************End sildeshow**********************************/
+
+     /********************************Body my template******************************/
+
+    /***************************Start About Section*****************************/
+    .About
+     {
+         padding-top:50px ;
+         padding-bottom: 50px;
+         margin-top: -28px;
+         font-weight: bold
+     }   
+    .About H1 span { color:  #e62929}
+    .About h3 span{color:  #e62929}
+    .subscribe .btn{margin: 10px auto}
+    .subscribe .form-control{ margin: auto}
+      /************************************End About Section***************************/
+
+      /**********************************Start Features Section***********************/
+      .features
+      {
+          background-color: #dadddf;
+          padding-top: 50px;
+          padding-bottom: 50px
+      }
+      .features h1{margin-bottom: 30px;font-weight: bold}
+      .features .feat span.glyphicon{font-size: 20px;padding-bottom: 10px}
+      /***********************************End Features Section*********************************/
+
+      /**********************************Start test Section***********************************/
+      .test h1 {font-weight: bold}
+      .test h1 span{color:#e62929 ; font-size: 30px} /****??????*****/
+      .test .carousel-indicators{ bottom: -33px}
+      .test span
+      {
+          font-size: 18px;
+          color:#e62929;
+          font-weight: bold 
+    }
+      .test .carousel-indicators
+      {
+          position: static;
+          width: 100%;
+          margin-left: auto;
+          padding-top: 20px
+          
+      }
+      .test .carousel-indicators li
+      {
+          height: 80px;
+          width: 80px;
+          text-indent: 0;
+          opacity:0.4;
+          border: solid 3px #fff;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-left: 5px;
+          transition: all ease-in 0.5s
+
+      }
+      .test .carousel-indicators li.active
+      {
+        height: 80px;
+        width: 80px;
+        opacity: 1;
+        background: none;
+        border: solid 3px #e62929 
+        }
+      .carousel-indicators li img{max-width: 100%}
+      /****************************************End test Section************************/
+
+      /****************************************Start Price Section************************/
+      .price_table
+      {
+      background-color: #DDD;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding-top: 20px;
+      padding-bottom: 40px
+
+      }
+      .price_table h1{font-weight: bolder ;padding-bottom: 20px}
+      .price_table .prices_boxs
+      {
+          background-color: #fff;
+          line-height: 250%;
+          border:10px solid #DDD;
+          padding-top: 5px;
+          padding-bottom: 20PX;
+          border-radius: 2px
+      }
+      .price_table .prices_boxs p
+      {
+          font-weight: bold;
+          font-size: 40px;
+          color:#a9a4a4;
+          height: 100px;
+          width: 100px;
+          background-color: #f3f3f3;
+          border-radius: 50px;
+          line-height: 100px;
+          -webkit-transition-duration: 0.7s;
+          -o-transition-duration: 0.7s;
+          -moz-transition-duration: 0.7s;
+          transition-duration: 0.7s
+      }
+      .price_table .prices_boxs:hover p
+      {
+        border: 2px solid #DDD;
+        -webkit-transform: scale(1.1,1.1) rotate(360deg);
+        -o-transform: scale(1.1,1.1) rotate(360deg);
+        -moz-transform: scale(1.1,1.1) rotate(360deg);
+        transform: scale(1.1,1.1) rotate(360deg)
+      }
+      /****************************************End price Section************************/
+      
+       /****************************************Start Team Section************************/
+       .team
+       {
+          min-height: 700px;
+           background-image: url(../images/1.jpg);
+           background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+           -webkit-background-size: cover;
+           width: 100%;
+           opacity: 0.9;
+           color:#fff;
+           margin-top: 40px;
+           margin-bottom: 40px
+       }
+       .team h1
+       {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-weight: bold
+       }
+       .person h2{padding-top: 20px;padding-bottom: 20px}
+       .person p {padding-bottom: 20px}
+
+        /****************************************End Team  Section************************/
+
+        /****************************************Start subcribe Section************************/
+        .subscribe
+        {
+            background-color: #eee;
+            color: black;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin-top: 5px;
+            padding-bottom: 20px
+        }
+        .subscribe h1
+        {
+            font-weight: bold;
+            color: #888;
+            padding-bottom: 20px
+        }
+        .subscribe .btn{border-radius: 0px}
+        .subscribe .form-control
+        {
+            border-radius: 0px;
+            margin-right: -5px;
+            width: 300px
+        }
+        
+        /****************************************End subcribeSection************************/
+
+     /****************************************End .statisticsSection************************/
+        .statistics
+        {
+            background:url("../images/14.jpg")no-repeat fixed center center  ;
+            background-size: cover;
+           -moz-background-size: cover;
+           -o-background-size: cover;
+           -webkit-background-size: cover;
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 40px
+        }
+        .statistics .data{background:rgba(2,2,2,0.6);min-height: 400px}  
+        .statistics .space{padding-bottom: 50px}     
+        .statistics h1
+        {
+            padding-top: 20px;
+            padding-bottom: 60px;
+            color:black;
+            -webkit-transition-duration: 0.7s;
+            -o-transition-duration: 0.7s;
+            -moz-transition-duration: 0.7s;
+            transition-duration: 0.7s
+        }
+        .statistics h1:hover{color:#e62929 }
+        .statistics .glyphicon:before
+        {
+            font-size: 50px;
+            color: black;
+            padding-top: 40px;
+            padding-bottom: 80px;
+            -webkit-transition-duration: 0.7s;
+            -o-transition-duration: 0.7s;
+            -moz-transition-duration: 0.7s;
+            transition-duration: 0.7s
+        }
+        .statistics .glyphicon::before:hover{color: blanchedalmond}
+        .statistics p
+        {
+            font-size: 60px;
+            font-weight: bold;
+            color: blanchedalmond;
+            padding-top: 40px;
+            padding-bottom: 0px;        
+            -webkit-transition-duration: 0.7s;
+            -o-transition-duration: 0.7s;
+            -moz-transition-duration: 0.7s;
+            transition-duration: 0.7s
+        }
+        .statistics p:hover{color:#e62929;cursor: pointer; }
+        .statistics .state
+        {
+            font-size: 19px;
+            color: white;
+            padding-bottom: 80px
+        }
+       /****************************************End statistics Section************************/
+
+      /****************************************Start Skills Section************************/
+      .our-skills{padding-top: 40px;padding-bottom: 60px}
+      .our-skills h1{padding-bottom: 60px}
+      .our-skills h2
+      {
+          margin-top: 0;
+          padding-bottom: 20px;
+          font-weight: bold
+      }
+      .our-skills .progress{height: 30px}
+      .our-skills .progress-bar{
+          font-size: 15px;
+          line-height: 30px;
+          font-weight: bold;
+          text-align: left;
+          text-indent: 10px
+      }
+      /**************************************** End Skills Section************************/
+      
+      /****************************************Start contact us Section************************/
+      .contact-us
+      {
+        background:url("../images/15.jpg")no-repeat fixed center center  ;
+        background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        min-height: 600px
+         
+      }
+      .contact-us .fields
+      {
+          background:rgb(9, 9, 9,0.8) ;
+          min-height: 600px;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          color: #DDD
+      }
+      .contact-us p{margin-bottom: 40px}
+      .contact-us textarea{height: 108 }
+      .contact-us input[type="text"],
+      .contact-us textarea
+      {
+          background: rgba(82,78,78,0.7);/*لونالغامض في الازار فورمه حاجه جيده*/
+          color: #fff;
+          border: none
+      }
+      /**************************************** End contact us Section************************/
+
+      /****************************************Start footer Section************************/
+      footer
+      {
+        background: #111;
+        color: #AAA;
+        padding-top: 10px;
+        margin-top: 0px;
+        min-height: 400px
+      }
+      footer a{ color: #AAA}
+
+    
+      footer a:hover{color:#FFF; text-decoration: none;}
+      footer h3
+      {
+          color: #0985D1;
+          letter-spacing: 1px;
+          margin-top: 30px;
+          margin-bottom: 20px
+      }
+      footer .three-columes{overflow: hidden}
+      footer .three-columes li
+      {
+          width: 33.3333333%;
+          float: left;
+          padding-top:5px
+      }
+      footer .social {overflow: hidden}
+      footer .social li
+      {
+          float:left;
+          width: 33.33333%;
+          margin-top: 10px ;
+          opacity:0.6 ;
+          filter:alpha(opacity=60);
+          -webkit-transition-duration:all 0.7s ease-in-out;
+          -o-transition-duration: all 0.7s ease-in-out;
+          -moz-transition-duration: all 0.7s ease-in-out;
+          transition-duration: all 0.7s ease-in-out
+      }
+      footer .social li:hover{opacity: 1}
+      .works img
+      {
+          height: 150px;
+          width: 150px;
+          margin:1px 1px
+
+      }
+      footer .img-thumbnail {background: rgba(2,2,2,0.4);border: 3px solid #444}
+      footer .copyright
+      {
+          background-color: #888;
+          padding-top: 15px;
+          padding-bottom: 5px;
+          color: #111;
+          margin-top: 30px;
+          font-size: larger
+      }
+      footer .copyright span
+      {
+        color: #0985D1 ;
+        padding-left: 3px;
+        padding-right: 3px;
+        font-weight: bold
+      }
+      /**************************************** End footer Section************************/
+
+      /****************************************Start scorll Section************************/
+      .scroll
+      {
+          width: 50px;
+          height: 50px;
+          color:#e62929;
+          z-index: 99999;
+          position: fixed;
+          text-align: center;
+          right: 15px;
+          bottom: 15px;
+          display: none;
+          cursor: pointer;
+          background-color: #fff;
+          border-radius: 50%;    
+      }
+      .scroll i{font-size: 40PX;}
+      .scroll i:hover{color: #111}
+     
+      /**************************************** End scorll Section************************/
+
+
+      

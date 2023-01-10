@@ -1,0 +1,63 @@
+/****************************************Start Media Query Section************************/
+@media(max-width:767px) /*phones and tabltes*/
+{
+    
+    .navbar-inverse .navbar-nav > li > a                     /*** navbar***/
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-fixed-top .navbar-collapse
+    .navbar-fixed-bottom .navbar-collapse
+    {
+        max-height: none;
+    }
+    .About h3
+    {
+        margin-top: 50px;
+    }
+    .About h3 span
+    {
+        color:  #e62929;
+    }
+    .features h1
+    {
+        margin-bottom:10px ;
+    }
+    .features .feat span.glyphicon
+    {
+        padding-top: 30px;
+    }
+    .subscribe .form-control
+    {
+        margin: auto;
+        width: 400px;
+    }
+    .works{
+        text-align: center;
+    }
+   
+
+}
+@media(min-width:768px) and (max-width:991px) /*small screen*/
+{
+    .features h1
+    {
+        margin-bottom:10px ;
+    }
+    .features .feat span.glyphicon
+    {
+        padding-top: 30px;
+    }
+
+}
+@media(min-width:991px) and (max-width:1199px)/*medium screen*/
+{
+
+}
+
+@media(min-width:1200px)/*lager screen*/
+{
+
+}
+/**************************************** End Media Query Section************************/

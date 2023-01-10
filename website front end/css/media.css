@@ -1,0 +1,122 @@
+/****************************************Start Media Query Section************************/
+@media (max-width: 767px) /*phones and tabltes*/ {
+  .row {
+    margin: 0 !important;
+  }
+  /****************** start section intro ************************/
+  .intro {
+    min-height: 573px;
+  }
+  /************** start section 1 *******************/
+  .sec1 {
+    height: auto;
+  }
+  .sec1 img {
+    height: 100%;
+    width: 100%;
+  }
+  /******************** start section 2 **********************/
+  .sec2 {
+    margin-top: 10px;
+    height: 1200px;
+    width: 100%;
+  }
+  .sec2 .parts .part-1 .icons {
+    position: relative;
+    top: 50%;
+    left: 15%;
+    padding: 5px;
+  }
+  .sec2 .parts .part-1 .icons .rotate-icon i {
+    font-size: 20px;
+    position: relative;
+    top: 18px;
+    left: 15px;
+  }
+  /*************************************** start section 3 ***************/
+  .sec3 {
+    height: auto;
+  }
+  /****************************** start section 4 *******************/
+  .sec4 .btn {
+    font-size: 10px;
+    text-align: center;
+    padding: 15px 5px;
+  }
+  /* start section 5 */
+  .sec5 .icons {
+    font-size: 14px;
+  }
+  .sec5 .copy li {
+    font-size: 8px;
+  }
+  .row {
+    margin: 0 !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) /*small screen*/ {
+  .intro .line {
+    top: 70%;
+  }
+  .sec1 {
+    height: auto;
+  }
+  .sec1 img {
+    margin: auto 89px;
+
+  }
+  .sec2 {
+    height: 1100px;
+  }
+  .sec2 .parts .part-1 .icons {
+    margin: 43px 121px;
+    padding: 7px;
+  }
+  .sec2 .parts .part-1 .icons .rotate-icon i {
+    position: relative;
+    top: 18px;
+    left: 15px;
+    font-size: 25px;
+  }
+  .sec3 {
+    height: auto;
+  }
+  .row {
+    margin: 0 !important;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) /*medium screen*/ {
+  .row {
+    margin: 0 !important;
+  }
+  .sec1 {
+    height: auto;
+  }
+  .sec1 img {
+    height: 100%;
+    width: 100%;
+  }
+  .sec2 .parts .part-1 .icons {
+    margin: 43px 34px;
+    padding: 11px;
+  }
+  .sec2 .parts .part-1 .icons .rotate-icon i {
+    position: relative;
+    top: 8px;
+    left: 15px;
+    font-size: 25px;
+  }
+  .sec3 {
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) /*lager screen*/ {
+  .sec1 {
+    height: auto;
+  }
+  .sec3 {
+    height: auto;
+  }
+}
+/**************************************** End Media Query Section************************/

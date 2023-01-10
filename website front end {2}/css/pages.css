@@ -1,0 +1,87 @@
+body{height: 0px;}
+/*****************************start About US body**********************************************/
+
+.breadcrumb-holder{background-color: #f5f5f5; margin-top: 65px;}
+.breadcrumb{padding: 10px 0px;margin: 0;}
+/***************************************************************************************/
+.about-us
+{
+    padding: 15px 0px;
+}
+.about-us h1
+{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -3px;
+    font-weight: bold;
+    font-size: 62px;
+}
+.about-us img
+{
+    height: 400px;
+    overflow: hidden;
+    width: 1100px;
+}
+.about-us .img-thumbnail{background-color: #908989; border: 3px solid rgb(77, 77, 77)}
+/*************************************************************************************************/
+.features h1
+{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -3px;/*بيقرب الحروف الكلام نعتبرها تركيه*/
+    font-weight: bold;
+    font-size: 42px;   
+}
+.features h3
+{
+    padding-bottom:10px ;
+    padding-top: 10px;
+}
+.features p{margin:20px ;}
+/************************************************************************************************/
+.About-CEO
+{
+    background-color: #eee;
+    padding-top: 40px;
+}
+.About-CEO h2
+{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-size: 32px;
+}
+.About-CEO p{line-height: 1.8;}
+.About-CEO .btn-danger{margin-bottom: 40px;}
+
+
+/*****************************End About US**********************************************/
+
+/*****************************start FAQ body**********************************************/
+.faq
+{
+    background-color:#e0e0e0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.faq h1
+{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -3px;
+    font-weight: bold;
+    font-size: 42px;
+}
+.faq hr{width: 70%;}
+.faq p{line-height: 1.5; padding-bottom: 20px;}
+.faq-Accordion .panel-heading a:after
+{
+    font-family: 'Glyphicons Halflings';
+    float: right;
+    content: "\e114";
+    cursor: pointer;
+    padding-left: 15px;
+    color:#333;
+}
+.faq-Accordion .panel-heading a.collapseOne:after
+{
+    content: "\e080";
+    color: black;
+}

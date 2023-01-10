@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+body {
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  font-family: "Abel", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+button {
+  text-transform: uppercase;
+}
+.row {
+  margin: 0 !important;
+}
+/********************* start overriding bootstrap*********************/
+/**********************main navbar**********************************/
+.navbar {
+  height: 70px;
+  margin: 0 0 0 0 !important;
+
+  padding: 0 !important;
+}
+/****************************************اللوجو*******************/
+.navbar-brand {
+  font-size: 30px;
+  line-height: 40px;
+}
+.navbar-brand span {
+  color: #8ddc8d;
+  padding-right: 10px;
+}
+/**.navbar-brand:hover{font-size: 40px;}**/
+/* Active link*/
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #8ddc8d;
+}
+/************************** لون الكلام قبل hover  ************************************/
+.navbar-inverse .navbar-nav > li > a {
+  color: #bbb;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+/*************************************.dropdown-menuلون قائمه************************/
+.dropdown-menu {
+  background-color: #101010;
+  color: white;
+  border-top: solid 3px #8ddc8d;
+  padding: 6px 20px;
+  min-width: 200px;
+}
+.navbar-right .dropdown-menu {
+  left: 0;
+  right: auto;
+} /*ده عشان اخلي القائمه انجلش مش عربي*/
+/***************************dropdown-menuده لون الكلام في*************************/
+.dropdown-menu > li > a {
+  color: #fff;
+  transition: padding 0.5s ease;
+} /* #01*/
+/****************************   dropdown-menu   في  hover ده لون***************/
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-color: #e62929;
+  color: white;
+  padding-left: 30px;
+} /*#01*/
+/*************************dropdown-menuالخط الفاصل في ***********************/
+.dropdown-menu .divider {
+  background-color: #9a2626;
+}
+/**************************ده الزرار اللي بيظهر في الفون******************/
+.navbar-toggle {
+  margin-top: 14px;
+}
+/********************* End Overriding Bootstrap**********************************************/
+
+/********************************start section intro****************************************************/
+.intro {
+  background: rgb(155, 226, 155) repeat;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin-bottom: 25px;
+  z-index: -99999999999999999999999999999999999999999999999999;
+}
+.intro-content {
+  background: url("../images/overlay3.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0%;
+  bottom: 0;
+}
+.intro i {
+  margin-top: 11%;
+  margin-bottom: 30px;
+  font-size: 95px;
+}
+.intro .title {
+  top: 300px;
+  margin: 25px 0;
+}
+.intro .btn {
+  padding: 14px 0;
+  width: 15%;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.intro .line {
+  width: 1px;
+  height: 32%;
+  background-color: #fff;
+  position: absolute;
+  top: 77%;
+  left: 50%;
+}
+.intro p {
+  text-transform: capitalize; /*edit (1)*/
+}
+
+/**************************************************start section ******************************************************/
+.sec1 {
+  height: 450px;
+  width: 100%;
+  margin: 30px 0;
+}
+.sec1 .description {
+  padding: 0 45px;
+}
+.sec1 .title-sec {
+  margin-top: 20px;
+}
+.sec1 span {
+  width: 25%;
+  height: 2px;
+  background: rgba(144, 144, 144, 0.5);
+  display: inline-block;
+}
+.sec1 .description p {
+  margin: 20px 0;
+  font-size: 18px;
+  width: 100%;
+}
+.sec1 img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 0 0;
+}
+/********************************************start section 2*********************************/
+.sec2 {
+  background: url("../images/header.jpg") no-repeat fixed center center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 800px;
+  color: #fff;
+  position: relative;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.sec2 .layout {
+  background: rgba(2, 2, 2, 0.6);
+  min-height: 600px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.sec2 .parts {
+  padding: 60px 0;
+}
+
+.sec2 .parts .part-1 .icons {
+  padding: 30px 10px;
+  border: 1px solid #fff;
+  display: inline-block;
+  text-align: center;
+  margin: 50px 31px;
+  transition: border;
+}
+.sec2 .parts .part-1 .icons .rotate-icon {
+  transform: rotate(45deg);
+  transition: border;
+  margin-bottom: 50px;
+}
+.sec2 .parts .part-1 .icons .rotate-icon i {
+  position: relative;
+  top: -13px;
+  left: 25px;
+  padding: 10% 10%;
+}
+
+.sec2 .parts .part-1 .icons {
+  transform: rotate(-45deg);
+  margin: 7% 7%;
+}
+.sec2 .parts .part-2 .line {
+  width: 25%;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block;
+}
+.sec2 .parts .part-2 p {
+  margin: 50px 0;
+}
+
+/* ***************************************tart section 3************************************ */
+.sec3 {
+  margin: 40px 0;
+  height: 700px;
+  width: 100%;
+}
+.sec3 span {
+  width: 25%;
+  height: 2px;
+  background: rgba(144, 144, 144, 0.5);
+  display: inline-block;
+  margin: 25px 0 25px 0;
+}
+.sec3 .part {
+  margin-top: 15px;
+}
+.sec3 .part img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+.sec3 .part h3 {
+  margin: 15px 0;
+}
+.sec3 .part p {
+  margin-bottom: 25px;
+}
+.sec3 .part .btn {
+  width: 120px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 15px 0;
+  background-color: #fff;
+  border: 1px solid black;
+}
+/* ***************************start section 4****************************************** */
+.sec4 {
+  position: relative;
+  height: 450px;
+  width: 100%;
+  padding: 25px;
+  background: url("../images/header.jpg") fixed no-repeat center center;
+  color: #fff;
+  margin: 30px 0 0 0;
+  background-size: cover;
+}
+.sec4 .layout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(2, 2, 2, 0.6);
+}
+.sec4 h2 {
+  padding-top: 30px;
+}
+.sec4 span {
+  width: 15%;
+  height: 2px;
+  background: rgba(144, 144, 144, 0.5);
+  display: inline-block;
+  margin: 25px 0 25px 0;
+}
+.sec4 .btnD {
+  width: 100%;
+}
+.sec4 P {
+  margin: 25px 0;
+}
+.sec4 .btn {
+  background-color: transparent;
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 15%;
+  margin-top: 25px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.sec4 .btns {
+  margin: 0;
+  padding: 0;
+}
+.sec4 .btn:hover {
+  color: black;
+  background-color: blanchedalmond;
+}
+/* ************************************start section 5************************************ */
+.sec5 {
+  height: 250px;
+  padding: 20px;
+  background: -webkit-linear-gradient(45deg, #8ddc8d, #6b6bb5);
+  width: 100%;
+  margin-top: 0;
+}
+.sec5 .icons {
+  margin: 40px 0;
+}
+.sec5 .icons li {
+  display: inline-block;
+  width: 50px;
+  margin-right: 20px;
+}
+.sec5 .copy li {
+  display: inline-block;
+  width: 13%;
+  margin-right: 20px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+/* end style web pa */
